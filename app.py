@@ -130,11 +130,10 @@ print("\n GROQ API SETUP")
 print("=" * 50)
 
 # Your Groq API Key
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
-# Set environment variable
-os.environ["GROQ_API_KEY"] = GROQ_API_KEY
-print(" Groq API key set successfully!")
+if not GROQ_API_KEY:
+    raise ValueError("GROQ_API_KEY environment variable is not set")
 
 # ========== MODEL INITIALIZATION ==========
 print("\n INITIALIZING GROQ LLM AND EMBEDDINGS")
@@ -487,4 +486,4 @@ if __name__ == '__main__':
     print("=" * 60)
     
 
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
