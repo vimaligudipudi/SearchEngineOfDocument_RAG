@@ -130,7 +130,7 @@ print("\n GROQ API SETUP")
 print("=" * 50)
 
 # Your Groq API Key
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 # Set environment variable
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
