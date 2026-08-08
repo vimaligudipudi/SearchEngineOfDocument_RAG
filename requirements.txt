@@ -1,0 +1,13 @@
+flask
+flask-cors
+llama-index
+llama-index-llms-groq
+llama-index-embeddings-huggingface
+pypdf
+python-docx
+docx2txt
+groq
+sentence-transformers
+torch
+transformers
+gunicorn
