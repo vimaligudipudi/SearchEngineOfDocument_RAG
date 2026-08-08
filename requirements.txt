@@ -8,6 +8,6 @@ python-docx
 docx2txt
 groq
 sentence-transformers
-torch
+torch==2.2.2+cpu
 transformers
 gunicorn
